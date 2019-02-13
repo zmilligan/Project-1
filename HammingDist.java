@@ -19,7 +19,12 @@ public class HammingDist
 	
 	public int hammingDist(String original, String compare)
 	{
-		return 0;
+		return -1;
+	}
+	
+	public int hammingDist(String city, int dist)
+	{
+		return -1;
 	}
 	
 	public String toString()
