@@ -1,3 +1,15 @@
+/**
+ * This class determines the Hamming Distance between two given cities and between the cities in a file
+ * 
+ * @author - Zandi Milligan
+ * @version 2019-02-13
+ */
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class HammingDist
 {
 	private String filename = "Mesonet.txt";
