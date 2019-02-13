@@ -25,7 +25,13 @@ public class HammingDist
 	 */
 	private ArrayList<String> cities;
 	
+	/**
+	 * The four-letter abbreviation of the name of the first city
+	 */
 	private String city1;
+	/**
+	 * The four-letter abbreviation of the name of the second city
+	 */
 	private String city2;
 	
 	private distance;
