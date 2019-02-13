@@ -40,7 +40,7 @@ public class HammingDist
         	strg = br.readLine();
         	while(strg != null)
         	{
-       	 		cities.add(strg.substring(0, 4));
+       	 		cities.add(strg.substring(1, 5));
         		strg = br.readLine();
         	}
         
