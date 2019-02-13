@@ -34,8 +34,25 @@ public class HammingDist
 	 */
 	private String city2;
 	
+	/**
+	 * The hamming distance between city1 and city2
+	 */
 	private distance;
+	/**
+	 * Array holding the hamming distances between city1 and the other cities in the file
+	 * index 0 holds the number with distance 1
+	 * index 1 holds the number with distance 2
+	 * index 2 holds the number with distance 3
+	 * index 3 holds the number with distance 4
+	 */
 	private int[] city1Dists;
+	/**
+	 * Array holding the hamming distances between city2 and the other cities in the file
+	 * index 0 holds the number with distance 1
+	 * index 1 holds the number with distance 2
+	 * index 2 holds the number with distance 3
+	 * index 3 holds the number with distance 4
+	 */
 	private int[] city2Dists;
 	
 	/**
