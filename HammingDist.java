@@ -90,7 +90,15 @@ public class HammingDist
 	 */
 	public int findHammingDist(String original, String compare)
 	{
-		return -1;
+		int dists = 0;
+		for(int index = 0; index < original.length(); ++index)
+		{
+			if(city1.charAt(index) != city2.charAt(index))
+			{
+				++dists;
+			}
+		}
+		return dists;
 	}
 	
 	/**
