@@ -18,3 +18,5 @@ When testing this method (using my toString to print out wach index in my array 
 Then I got to deal with my toString method for real. I copied the desired outcome from the project pdf and used String.format for each of the three lines (much easier than trying to make it all one block). I ran Main for each line that I modified to ensure it was correct before continuing. I probably should have saved the changes to git, but I was planning on just doing that once I completed the method as a whole. Once I got that figured out, I ran the Main method as it was and it seemed to work. Just to be sure, however, I changed the cities back to the ones given in the example to have another test. All seemed well.
 
 I finished by putting javadoc documentation for all of my variables (which I like to do last so that I don't have to scroll for forever and a day to see all of my object's variables whilst coding). I also added a few clarifying comments throughout the HammingDist class. See the code itself for all JavaDoc and further explainations of the methods.
+
+Project 1 has officially passed all tests for ZyLabs submission.
