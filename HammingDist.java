@@ -93,7 +93,7 @@ public class HammingDist
 		int dists = 0;
 		for(int index = 0; index < original.length(); ++index)
 		{
-			if(city1.charAt(index) != city2.charAt(index))
+			if(original.charAt(index) != compare.charAt(index))
 			{
 				++dists;
 			}
@@ -116,6 +116,27 @@ public class HammingDist
 		int dist2 = 0;
 		int dist3 = 0;
 		int dist4 = 0;
+		
+		for(String comp : cities)
+		{
+			int tempDist = findHammingDist(city, comp);
+			// update the correct variable based on the hamming distance
+			//NOTE: the distance will only be 0 for the original city, so we don't need to count that one.
+			if(tempDist == 1)
+				++dist1;
+			if(tempDist == 2)
+				++dist2;
+			if(tempDist == 3)
+				++dist3;
+			if(tempDist == 4)
+				++dist4;
+		}
+		
+		//put the distances into the array at the proper index
+		distances[0] = dist1;
+		distances[1] = dist2;
+		distances[2] = dist3;
+		distances[3] = dist4;
 		
 		return distances;
 	}
