@@ -92,6 +92,14 @@ public class HammingDist
 		return -1;
 	}
 	
+	/**
+	 * This method finds the hamming distances between the given city and all other cities in the file. It saves those distances in
+	 * an int array
+	 * 
+	 * @param city String the name of the city to compare
+	 * @return int[] an array of hamming distances. Index 0 holds the number of those of hamming dist 1, index 1 holds the number
+	 * of cities of hamming distance 2, and indexes 2 and 3 for distances 3 and 4 respectively. 
+	 */
 	public int[] hammingDist(String city)
 	{
 		return null;
