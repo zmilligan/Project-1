@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class HammingDist
 {
 	private String filename = "Mesonet.txt";
+	private final int NUMCITIES = 120;
 	private ArrayList<String> cities;
 	
 	private String city1;
@@ -105,6 +106,15 @@ public class HammingDist
 		return null;
 	}
 	
+	 /**
+     	* toString override. Gives all information about the hamming distances.
+     	* 
+     	* @return All information about the hamming distances formatted as (replacing parentheses with member variables):
+     	* The Hamming Distance of (city1) and (city2): (distance).
+     	* Out of (NUMCITIES - 1), for (city1), number of nodes are: (city1Dists[0]), (city1Dists[1]), (city1Dists[2]), (city1Dists[3]) and
+     	* for (city2), number of nodes are: (city2Dists[0]), (city2Dists[1]), (city2Dists[2]), (city2Dists[3]) respectively.
+     	*/
+	@Override
 	public String toString()
 	{
 		
