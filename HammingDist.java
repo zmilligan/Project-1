@@ -111,7 +111,13 @@ public class HammingDist
 	 */
 	public int[] hammingDist(String city)
 	{
-		return null;
+		int[] distances = new int[4];
+		int dist1 = 0;
+		int dist2 = 0;
+		int dist3 = 0;
+		int dist4 = 0;
+		
+		return distances;
 	}
 	
 	 /**
