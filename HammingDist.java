@@ -80,6 +80,13 @@ public class HammingDist
         	br.close();
 	}
 	
+	/**
+	 * This method determines the hamming distance (1, 2, 3, 4) between the two given cities
+	 * 
+	 * @param original String the first city
+	 * @param compare String the second city to be compared to the first
+	 * @return int number 1-4 representing the hamming distance between the two given cities
+	 */
 	public int findHammingDist(String original, String compare)
 	{
 		return -1;
