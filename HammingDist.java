@@ -14,7 +14,27 @@ public class HammingDist
 	
 	public void readFile()
 	{
+		cities = new ArrayList<String>(120);
 		
+		// Use a buffered Reader on the file:
+    		BufferedReader br = new BufferedReader(new FileReader(filename));
+        	String strg;
+        
+        	// read in the first three lines not important
+        	strg = br.readLine();
+        	strg = br.readLine();
+        	strg = br.readLine();
+        
+        	//read in the first readable line
+        	strg = br.readLine();
+        	while(strg != null)
+        	{
+       	 		cities.add(strg.substring(0, 4));
+        		strg = br.readLine();
+        	}
+        
+        	// close reader
+        	br.close();
 	}
 	
 	public int hammingDist(String original, String compare)
