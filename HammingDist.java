@@ -10,6 +10,17 @@ public class HammingDist
 	{
 		this.city1 = city1;
 		this.city2 = city2;
+		
+		try
+    		{
+    			readFile();
+    		}
+    		catch(IOException e)
+    		{
+    			System.out.println("Error reading from file!\n");
+    			e.printStackTrace();
+    		}
+		
 	}
 	
 	public void readFile()
