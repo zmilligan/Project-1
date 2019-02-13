@@ -6,6 +6,7 @@ public class HammingDist
 	private String city1;
 	private String city2;
 	
+	private distance;
 	private int[] city1Dists;
 	private int[] city2Dists;
 	
@@ -24,6 +25,7 @@ public class HammingDist
     			e.printStackTrace();
     		}
 		
+		distance = findHammingDist(city1, city2);
 	}
 	
 	public void readFile()
@@ -51,14 +53,14 @@ public class HammingDist
         	br.close();
 	}
 	
-	public int hammingDist(String original, String compare)
+	public int findHammingDist(String original, String compare)
 	{
 		return -1;
 	}
 	
-	public int hammingDist(String city, int dist)
+	public int[] hammingDist(String city, String omit)
 	{
-		return -1;
+		return null;
 	}
 	
 	public String toString()
