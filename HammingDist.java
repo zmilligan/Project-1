@@ -65,9 +65,11 @@ public class HammingDist
 	 */
 	public HammingDist(String city1, String city2)
 	{
+		//assign city variables
 		this.city1 = city1;
 		this.city2 = city2;
 		
+		//ensures no issues with reading the file
 		try
     		{
     			readFile();
@@ -78,6 +80,7 @@ public class HammingDist
     			e.printStackTrace();
     		}
 		
+		//determine and assign hamming distance variables
 		distance = findHammingDist(city1, city2);
 		city1Dists = hammingDist(city1);
 		city2Dists = hammingDist(city2);
@@ -90,6 +93,7 @@ public class HammingDist
 	 */
 	public void readFile()
 	{
+		
 		cities = new ArrayList<String>(120);
 		
 		// Use a buffered Reader on the file:
@@ -103,6 +107,8 @@ public class HammingDist
         
         	//read in the first readable line
         	strg = br.readLine();
+		
+		//add the four-letter city names into cities and read in the next line
         	while(strg != null)
         	{
        	 		cities.add(strg.substring(1, 5));
@@ -122,14 +128,19 @@ public class HammingDist
 	 */
 	public int findHammingDist(String original, String compare)
 	{
+		//temporary hamming distance variable
 		int dists = 0;
+		
+		//steps through each character and determines if they are the same for both Strings
 		for(int index = 0; index < original.length(); ++index)
 		{
+			//if the characters are not the same, increment the  temporary hamming distance variable
 			if(original.charAt(index) != compare.charAt(index))
 			{
 				++dists;
 			}
 		}
+		
 		return dists;
 	}
 	
@@ -143,12 +154,14 @@ public class HammingDist
 	 */
 	public int[] hammingDist(String city)
 	{
+		//temporary hamming distance variables
 		int[] distances = new int[4];
 		int dist1 = 0;
 		int dist2 = 0;
 		int dist3 = 0;
 		int dist4 = 0;
 		
+		//steps through each string in the cities array
 		for(String comp : cities)
 		{
 			int tempDist = findHammingDist(city, comp);
