@@ -11,4 +11,20 @@ public class HammingDist
 		this.city1 = city1;
 		this.city2 = city2;
 	}
+	
+	public void readFile()
+	{
+		
+	}
+	
+	public int hammingDist(String original, String compare)
+	{
+		return 0;
+	}
+	
+	public String toString()
+	{
+		
+		return "";
+	}
 }
