@@ -152,7 +152,10 @@ public class HammingDist
 	@Override
 	public String toString()
 	{
-		
-		return "";
+		return String.format("The Hamming Distance of %s and %s: %d.\n", city1, city2, distance) + 
+				String.format("Out of %d, for %s, number of nodes are: %d, %d, %d, %d and\n", 
+						NUMCITIES -1, city1, city1Dists[0], city1Dists[1], city1Dists[2], city1Dists[3]) + 
+				String.format("for %s, number of nodes are: %d, %d, %d, %d respectively.",
+						city2, city2Dists[0], city2Dists[1], city2Dists[2], city2Dists[3]);
 	}
 }
