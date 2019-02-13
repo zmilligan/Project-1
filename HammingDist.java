@@ -50,6 +50,11 @@ public class HammingDist
 		city2Dists = hammingDist(city2);
 	}
 	
+	/**
+	 * This method reads from the file and saves the abbreviated city names into the cities ArrayList
+	 * 
+	 * @throws IOException Throw this exception if a major issue with the file occurs.
+	 */
 	public void readFile()
 	{
 		cities = new ArrayList<String>(120);
