@@ -12,8 +12,17 @@ import java.util.ArrayList;
 
 public class HammingDist
 {
+	/**
+	 * The name of the file from which the other cities are retrieved
+	 */
 	private String filename = "Mesonet.txt";
+	/**
+	 * The number of cites from the file
+	 */
 	private final int NUMCITIES = 120;
+	/**
+	 * The ArrayList to hold all of the cities from the file
+	 */
 	private ArrayList<String> cities;
 	
 	private String city1;
