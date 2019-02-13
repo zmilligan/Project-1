@@ -22,6 +22,14 @@ public class HammingDist
 	private int[] city1Dists;
 	private int[] city2Dists;
 	
+	/**
+	 * Constructor for a HammingDist object. This constructor reads a file of cities and puts all city abbreviations in an ArrayList
+	 * then determines the hamming distance between the two given cities and between each city and the others in the file. It saves
+	 * those resulting arrays in the city#Dists arrays.
+	 * 
+	 * @param city1 String four-letter abbreviation of the first city
+	 * @param city2 String four-letter abbreviation of the second city
+	 */
 	public HammingDist(String city1, String city2)
 	{
 		this.city1 = city1;
